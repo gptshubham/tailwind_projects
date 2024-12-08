@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intermediate HTML Concepts</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Intermediate Concepts</h1>
+      <nav>
+        <ul>
+          <li><a href="#forms">HTML Forms</a></li>
+          <li><a href="#entities">HTML Entities</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#Iframe">Iframe</a></li>
+          <li><a href="#media">Links & Media</a></li>
+          <li><a href="#data">Data Attributes</a></li>
+          <li><a href="#validation-form">Validation Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="forms">
+      <h2>Forms Example</h2>
+      <form action="storage-url">
+        <!-- username -->
+        <label for="username">Name:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter Username"
+          required
+        />
+        <br /><br />
+        <!-- password -->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+        <br /><br />
+        <!-- Gender Options -->
+        <label for="gender">Gender</label>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+
+        <input
+          type="radio"
+          id="prefer-not-to-say"
+          name="gender"
+          value="prefer-not-to-say"
+        />
+        <label for="prefer-not-to-say">Prefer not to say</label>
+        <br /><br />
+        <!-- Subscription Check Boxes -->
+        <label for="Subscription">Subscribe to:</label>
+
+        <input
+          type="checkbox"
+          id="newsletter"
+          name="newsletter"
+          value="newsletter"
+        />
+        <label for="newsletter">NewsLetter</label>
+
+        <input
+          type="checkbox"
+          id="special_offer"
+          name="special_offer"
+          value="special_offer"
+        />
+        <label for="special_offer">Special Offers</label>
+        <br /><br />
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+    <section id="entities">
+      <h2>HTML Entities Example</h2>
+      <p>HTML Entities are used to deploy Special Characters</p>
+      <p>
+        Use &lt; for less than symbol (<), and &amp; for the ampersand symbol
+        (&)
+      </p>
+      <p>
+        Other examples: &quot; (for double quotes")", &apos; (for single quote
+        ') and &copy; (for copyright ©)
+      </p>
+    </section>
+    <section id="tables">
+      <h2>Table Example</h2>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>30</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>25</td>
+          <td>Female</td>
+        </tr>
+      </table>
+    </section>
+    <section id="Iframe">
+      <h2>Iframe Example</h2>
+      <h3>Iframe to Render YouTube Videos</h3>
+      <iframe
+        src="https://www.youtube.com/embed/zjkBMFhNj_g"
+        width="560"
+        height="315"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <h3>Iframe to render other html files on our website</h3>
+      <iframe src="../01_basic_html/index.html" frameborder="1"></iframe>
+    </section>
+    <section id="media">
+      <h2>HTML Links and Media</h2>
+      <p>
+        <a href="https://example.com" target="_blank">Visit Example Website</a>
+      </p>
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source src="./check.mp3" type="audio/mp3" />
+        Unsupported Browser
+      </audio>
+      <h3>Video Example</h3>
+      <video height="240" width="320" controls>
+        <source src="video-file.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <section id="data">
+      <h2>Data Attributes Example</h2>
+      <div data-product-id="12345" data-category="electronics">
+        <p>This is a product container with custom data attributes</p>
+      </div>
+    </section>
+    <section id="validation-form">
+      <h2>Validation Form Example</h2>
+      <form action="storage-url">
+        <!-- email validation -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+        <!-- age validation -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required />
+        <br /><br />
+        <!-- submit button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

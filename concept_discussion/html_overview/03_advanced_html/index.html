@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Advanced Concepts</title>
+    <meta
+      name="description"
+      content="Advanced HTML Concepts, covering Accessibility, APIs, SEO, microdata, and more."
+    />
+    <meta
+      name="keywords"
+      content="HTML, accessibility, SEO, ARIA, Web APIs, i18n"
+    />
+  </head>
+  <body>
+    <!-- accessibility (ARIA) -->
+    <h2>Accessibility with ARIA</h2>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+    </nav>
+    <!-- ARIA Example with roles and labels for accessibility -->
+    <div
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-controls="modal-content"
+    >
+      <h3 id="modal-title">Dialog Title</h3>
+      <div id="modal-content">
+        <p>This is a modal controlled by ARIA attributes.</p>
+      </div>
+      <button role="button" aria-label="close dialog">Close</button>
+    </div>
+
+    <!-- HTML APIs -->
+    <h2>HTML5 APIs</h2>
+
+    <!-- Geolocation API Example -->
+    <p id="geo-status">Click the button to get your location:</p>
+    <button onclick="getLocation()">Get Location</button>
+    <div id="location"></div>
+
+    <!-- Drag and Drop API Example -->
+    <h3>Drag and Drop Example</h3>
+    <div
+      id="drag-box"
+      draggable="true"
+      ondragstart="drag(event)"
+      style="
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+      "
+    >
+      Drag me
+    </div>
+
+    <div
+      id="drop-area"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+      style="
+        width: 200px;
+        height: 200px;
+        border: 2px dashed #000;
+        margin-top: 20px;
+      "
+    >
+      Drop here
+    </div>
+
+    <!-- Canvas API Example -->
+    <h3>Canvas Example</h3>
+    <canvas id="myCanvas" width="300" height="200" style="border: 1px solid">
+    </canvas>
+
+    <!-- Custom Elements (Web Components) -->
+    <h2>Custom Elements (Web Components)</h2>
+
+    <!-- define a custom element 'my-element' -->
+    <my-element></my-element>
+
+    <script>
+      // Define a new HTML Element using Web Components
+      class MYElement extends HTMLElement {
+        constructor() {
+          super();
+          this.innerHTML =
+            '<p>This is a custom element defined using Web Components.</p>';
+        }
+      }
+
+      // Register the new element
+      customElements.define('my-element', MYElement);
+    </script>
+
+    <h2>SEO Best Practices</h2>
+  </body>
+</html>
