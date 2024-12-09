@@ -1,0 +1,94 @@
+.parent > .child {
+  background-color: lightblue;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.heading + .adjacent-sibling {
+  color: brown;
+  font-weight: bold;
+}
+
+.heading-general ~ .general-sibling {
+  color: green;
+}
+
+input[required] {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+a.hover-link:hover {
+  color: orange;
+}
+
+.pseudo-element::before {
+  content: 'Note: ';
+  color: darkred;
+  font-weight: bold;
+}
+
+/* CSS Variables (Custom Properties) */
+
+/* Defining custom properties at the root level for reuse */
+:root {
+  --main-bg-color: lightcoral;
+  --main-text-color: white;
+  --main-padding: 20px;
+}
+/* Application of custom properties using var() */
+.box {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: var(--main-padding);
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Responsiveness using media query */
+
+@media (min-width: 768px) {
+  .responsive-box {
+    background-color: lightgreen;
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .responsive-box {
+    background-color: lightpink;
+    padding: 15px;
+  }
+}
+.flex-container {
+  background-color: lightgray;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-items {
+  background-color: coral;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.grid-items {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

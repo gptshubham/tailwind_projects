@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overview - Intermediate Concepts</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Advanced CSS Selectors</h2>
+    <!-- child selectors -->
+    <div class="parent">
+      <div class="child">This is a direct child of parent div</div>
+      <div>This is not a direct child of body</div>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <h3 class="heading">Heading</h3>
+    <p class="adjacent-sibling">
+      This paragraph is immediately after the heading
+    </p>
+
+    <!-- General Sibling Selector -->
+    <h3 class="heading-general">Another Heading</h3>
+    <p class="general-sibling">This paragraph follows the heading.</p>
+    <p class="general-sibling">This is another sibling of the heading</p>
+
+    <!-- Attribute Selector -->
+    <input type="text" placeholder="Type here" required />
+    <input type="password" placeholder="Enter password" required />
+
+    <!-- Pseudo-class Selector -->
+    <a href="#" class="hover-link">Hover Over This Link</a>
+    <p class="pseudo-element">This paragraph has a ::before pseudo-element</p>
+
+    <!-- CSS Variables (Custom Properties) -->
+    <h2>CSS Variables (Custom Properties)</h2>
+    <div class="box">
+      This box uses CSS variables for background color, padding, and text color.
+    </div>
+
+    <!-- Responsive Design -->
+    <h2>Responsive Design</h2>
+    <p class="responsive-box">Resize the window to see responsive behavior</p>
+
+    <!-- Flexbox -->
+    <h3>Flexbox Layout</h3>
+    <div class="flex-container">
+      <p class="flex-items">Flex Item 1</p>
+      <p class="flex-items">Flex Item 2</p>
+      <p class="flex-items">Flex Item 3</p>
+    </div>
+
+    <!-- Grid Layout -->
+    <h3>Grid Layout</h3>
+    <div class="grid-container">
+      <p class="grid-items">Grid Item 1</p>
+      <p class="grid-items">Grid Item 2</p>
+      <p class="grid-items">Grid Item 3</p>
+      <p class="grid-items">Grid Item 4</p>
+    </div>
+  </body>
+</html>

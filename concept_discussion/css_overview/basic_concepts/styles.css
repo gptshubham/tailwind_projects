@@ -1,0 +1,86 @@
+p {
+  color: blue;
+  font-size: 16;
+}
+
+.red {
+  color: red;
+}
+
+#green {
+  color: green;
+  font-style: italic;
+}
+
+div > h1 {
+  color: purple;
+}
+
+.universal * {
+  color: purple;
+  margin-bottom: 10px;
+}
+/* a universal selector with a class will target all elements within that class */
+
+h2 {
+  color: black;
+}
+
+input[type='text'] {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+a.pseudo-class:hover {
+  color: orange;
+}
+
+p.pseudo-element::before {
+  content: 'Note: ';
+  font-weight: bold;
+  color: darkred;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#custom {
+  /* color: white; --> it doesn't have any effect bcz p selector has already been targeted above directly */
+  background-color: darkblue;
+  text-align: center;
+  /* line-height: 100px; --> effective only for single line element */
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.box-model {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  background-color: chocolate;
+}
+
+.display-block {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.display-inline {
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.positioning-example {
+  background-color: lightblue;
+  position: relative;
+  top: 10px;
+  left: 20px;
+  padding: 10px;
+  border: 2px blue dashed;
+}
